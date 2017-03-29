@@ -1,5 +1,6 @@
 package com.example.diegoandres.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,5 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Vista1.setText("Cambio el texto oprimiendo el boton");
+        Intent intent = new Intent(this,Actividad2.class);
+        startActivity(intent);
     }
 }
